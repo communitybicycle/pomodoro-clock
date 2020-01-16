@@ -1,0 +1,117 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #d9534f;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 2rem;
+}
+
+i {
+  transition: all 0.3s;
+}
+
+i:hover {
+  color: #d9d9d9;
+}
+
+#app {
+  border: 5px solid white;
+  border-radius: 50%;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+  height: 600px;
+  width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#title {
+  text-align: center;
+  flex: 1 0 100%;
+  order: 0;
+}
+
+#controller {
+  text-align: center;
+  flex: 0 0 75%;
+  display: flex;
+  width: 80%;
+  order: 2;
+}
+
+#controller h2 {
+  margin-bottom: 15px;
+}
+
+#controller p {
+  margin-top: 0;
+  font-size: 1.6rem;
+}
+
+#break {
+  width: 50%;
+  display: inline-block;
+}
+
+#session {
+  width: 50%;
+  display: inline-block;
+}
+
+#display {
+  text-align: center;
+  flex: 1 0 100%;
+  padding: 40px 0;
+  order: 1;
+}
+
+#timer-div {
+  width: 100%;
+}
+
+#timer-label {
+  margin: 0;
+}
+
+#time-left {
+  font-size: 5.5rem;
+  font-weight: 600;
+  width: 100%;
+  text-emphasis: 1shadow;
+}
+
+#time-left span {
+  margin: 0;
+}
+
+#controls {
+  flex: 0 0 30%;
+  text-align: center;
+  font-size: 1.6rem;
+  order: 3;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  padding-bottom: 0;
+  height: 50px;
+  border: 2px solid white;
+}
+
+#controls span i {
+  font-size: 2rem;
+}
