@@ -10,23 +10,23 @@ var tickTock;
 //selectors
 
 // break length
-var breakInc = document.querySelector("#break-increment");
-var breakDec = document.querySelector("#break-decrement");
-var breakLengthText = document.querySelector("#break-length");
+var breakInc = document.getElementById("break-increment");
+var breakDec = document.getElementById("break-decrement");
+var breakLengthText = document.getElementById("break-length");
 
 // session length
-var sessionInc = document.querySelector("#session-increment");
-var sessionDec = document.querySelector("#session-decrement");
-var sessionLengthText = document.querySelector("#session-length");
+var sessionInc = document.getElementById("session-increment");
+var sessionDec = document.getElementById("session-decrement");
+var sessionLengthText = document.getElementById("session-length");
 
 // control buttons
-var playButton = document.querySelector("#start_stop");
-var resetButton = document.querySelector("#reset");
+var playButton = document.getElementById("start_stop");
+var resetButton = document.getElementById("reset");
 
 // remaining time
-var remainingTimeText = document.querySelector("#remaining-time");
-var timerLabel = document.querySelector("#timer-label");
-var alarm = document.querySelector("#beep");
+var remainingTimeText = document.getElementById("remaining-time");
+var timerLabel = document.getElementById("timer-label");
+var alarm = document.getElementById("beep");
 
 // timer length controller event listeners
 breakInc.addEventListener("click", () => {
