@@ -1,3 +1,4 @@
+// initialize variables
 var breakLength = 5;
 var sessionLength = 25;
 var remainingTime = 1500;
@@ -7,7 +8,6 @@ var displayTime;
 var playing = false;
 var status = "SESSION";
 var tickTock;
-//selectors
 
 // break length
 var breakInc = document.getElementById("break-increment");
@@ -58,7 +58,6 @@ sessionDec.addEventListener("click", () => {
 });
 
 // control button event listeners
-
 playButton.addEventListener("click", () => {
   playing ? Pause() : Resume();
 });
@@ -70,6 +69,7 @@ resetButton.addEventListener("click", () => {
   Reset();
 });
 
+// timer logic
 const Timer = time => {
   minutes = Math.floor(time / 60);
   seconds = Math.floor(time % 60);
